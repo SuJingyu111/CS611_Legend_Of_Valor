@@ -13,8 +13,8 @@ public class Monster extends Figure {
     public Monster(String[] args) {
         setName(args[0]);
         setLevel(Integer.parseInt(args[1]));
-        setBaseDamage(Integer.parseInt(args[2]));
-        setBaseDefense(Integer.parseInt(args[3]));
+        setBaseDamage((int)(0.1 * Integer.parseInt(args[2])));
+        setBaseDefense((int)(Integer.parseInt(args[3]) * 0.05));
         setDodgeChance(Integer.parseInt(args[4]));
         setBounty(BOUNTY_PER_LEVEL * getLevel());
         setExpGain(EXP_GAIN_PER_LEVEL * getLevel());

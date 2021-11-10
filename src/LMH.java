@@ -1,7 +1,5 @@
 //Class for the game entity
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class LMH {
 
     private HeroFactory heroFactory;
@@ -222,12 +220,29 @@ public class LMH {
                 System.out.println("Which hero? ");
                 int idx = Utils.takeInteger(1, heroTeam.size()) - 1;
                 Hero hero = heroTeam.getHeroByIdx(idx);
-                Utils.heroUseItem(hero, null);
+                heroUseItem(hero);
             }
             else if (input.equals("STAT")) {
                 heroTeam.showTeam();
             }
             else break;
+        }
+    }
+
+    private void heroUseItem(Hero hero) {
+        hero.showInventory();
+        System.out.println("What item do you want to use? Enter its name: ");
+        String input = Utils.takeInput();
+        while (!hero.hasItem(input)) {
+            input = Utils.takeInput();
+        }
+        while (!hero.useItem(input, null)) {
+            hero.showInventory();
+            System.out.println("What item do you want to use? Enter its name: ");
+            input = Utils.takeInput();
+            while (!hero.hasItem(input)) {
+                input = Utils.takeInput();
+            }
         }
     }
  }

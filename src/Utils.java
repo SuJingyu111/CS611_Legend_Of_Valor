@@ -44,21 +44,4 @@ public class Utils {
             return takeYes();
         }
     }
-
-    public static void heroUseItem(Hero hero, List<Monster> monsters) {
-        hero.showInventory();
-        System.out.println("What item do you want to use? Enter its name: ");
-        String input = Utils.takeInput();
-        while (!hero.hasItem(input)) {
-            input = Utils.takeInput();
-        }
-        while (!hero.useItem(input, monsters)) {
-            hero.showInventory();
-            System.out.println("What item do you want to use? Enter its name: ");
-            input = Utils.takeInput();
-            while (!hero.hasItem(input)) {
-                input = Utils.takeInput();
-            }
-        }
-    }
 }

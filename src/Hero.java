@@ -308,4 +308,8 @@ public class Hero extends Figure {
         setMoney(getMoney() + inventory.getItemByName(name).getPrice());
         inventory.remove(name);
     }
+
+    public boolean hasAnyItem() {
+        return !inventory.isEmpty();
+    }
 }

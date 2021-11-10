@@ -55,4 +55,8 @@ public class Inventory implements Iterable<String>{
     public Iterator<String> iterator() {
         return inventory.keySet().iterator();
     }
+
+    public boolean isEmpty() {
+        return inventory.isEmpty();
+    }
 }

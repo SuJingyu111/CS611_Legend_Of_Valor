@@ -43,6 +43,10 @@ public class Fight {
             if (hero.isSober()) {
                 System.out.println("Choose your move: a -attack, i -check inventory");
                 String move = takeOperation();
+                if (move.equals("i") && !hero.hasAnyItem()) {
+                    System.out.println("No items! Automatically turn to attack");
+                    move = "a";
+                }
                 if (move.equals("a")) {
                     System.out.println("Monsters:");
                     showMonsters();
@@ -62,8 +66,11 @@ public class Fight {
                         }
                     }
                 }
+                else if (move.equals("i")){
+                    heroUseItem(hero, monsters);
+                }
                 else {
-                    Utils.heroUseItem(hero, monsters);
+                    System.err.println("sth is wrong");
                 }
             }
         }
@@ -117,6 +124,28 @@ public class Fight {
             hero.setCurMana(Math.max(hero.getCurMana(), hero.getMana() / 2));
             hero.incrementExp(Math.max(expSum / heroTeam.size(), 1));
             hero.incrementMoney(Math.max(bountySum / heroTeam.size(), 1));
+        }
+    }
+
+    private void heroUseItem(Hero hero, List<Monster> monsters) {
+        hero.showInventory();
+        if (!hero.hasAnyItem()) {
+            System.out.println("Hero has no item. Abort.");
+            return;
+        }
+        System.out.println("What item do you want to use? Enter its name: ");
+        String input = Utils.takeInput();
+        while (!hero.hasItem(input)) {
+            System.out.println("No such item! Try again!");
+            input = Utils.takeInput();
+        }
+        while (!hero.useItem(input, monsters)) {
+            hero.showInventory();
+            System.out.println("What item do you want to use? Enter its name: ");
+            input = Utils.takeInput();
+            while (!hero.hasItem(input)) {
+                input = Utils.takeInput();
+            }
         }
     }
 }
