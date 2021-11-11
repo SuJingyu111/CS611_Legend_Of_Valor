@@ -26,7 +26,7 @@ public class ItemFactory {
         Random rand = new Random();
         String itemType = itemTypes[rand.nextInt(itemTypes.length)];
         List<String[]> itemParaList = new ArrayList<>();
-        String fileName = itemType + ".txt";
+        String fileName = "src/" + itemType + ".txt";
         Item item = null;
         try {
             File file = new File(fileName);

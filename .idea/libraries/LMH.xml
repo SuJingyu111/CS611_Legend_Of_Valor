@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LMH">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/LMH.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -70,7 +70,7 @@ public class HeroFactory {
     private void populateHeroTypeMap() {
         try {
             for (String heroType : heroTypeArr) {
-                String fileName = heroType + "s" + ".txt";
+                String fileName = "src/" + heroType + "s" + ".txt";
                 File file = new File(fileName);
                 BufferedReader br = new BufferedReader(new FileReader(file));
                 br.readLine();

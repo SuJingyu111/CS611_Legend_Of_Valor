@@ -25,7 +25,7 @@ public class MonsterFactory {
     private Monster getMonsterByType(String monsterType) {
         try {
             Random rand = new Random();
-            String fileName = monsterType + ".txt";
+            String fileName = "src/" + monsterType + ".txt";
             File file = new File(fileName);
             BufferedReader br = new BufferedReader(new FileReader(file));
             br.readLine();
