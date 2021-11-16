@@ -18,8 +18,8 @@ Class Intro:
 Main
 - Main is the class that actually runs.
 
-LMH
-- LMH is the class for game entity.
+LOV
+- LOV is the class for game entity.
 
 Armory
 - Class for Armors.

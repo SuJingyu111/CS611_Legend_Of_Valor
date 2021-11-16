@@ -1,4 +1,4 @@
-Nexus extends Market and is spawnpoint
+HeroNexus extends Market and is spawnpoint
 *Might need to change toString of Cell to make them Plain cells
 Koulou extends Cells buffs hero strength 10%
 Bush extends Cells buffs hero dexterity by 10%
