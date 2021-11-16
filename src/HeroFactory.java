@@ -6,18 +6,24 @@ import java.io.FileReader;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
-public class HeroFactory {
+public class HeroFactory{
+
+    private static HeroFactory heroFactory = new HeroFactory();
 
     private Map<String, List<Hero>> heroTypeMap;
 
     private String[] heroTypeArr = new String[]{"Warrior", "Sorcerer", "Paladin"};
 
-    public HeroFactory() {
+    private HeroFactory() {
         heroTypeMap = new HashMap<>();
         populateHeroTypeMap();
     }
 
-    public Hero produceNewHero() {
+    public static HeroFactory getInstance(){
+        return heroFactory;
+    }
+
+    public Hero produce() {
         String type = getHeroTypeFromInput();
         return getHeroByType(type);
     }

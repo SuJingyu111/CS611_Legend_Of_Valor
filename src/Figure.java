@@ -12,6 +12,20 @@ public class Figure {
 
     private int baseDefense;
 
+    private String mapName;
+
+    private int index;
+
+    public Figure(int index) {
+        this.index = index;
+        if (this instanceof Hero) {
+            mapName = "H" + this.index;
+        }
+        else if (this instanceof Monster) {
+            mapName = "M" + this.index;
+        }
+    }
+
     public void statusDisplay() {
 
     }
@@ -54,5 +68,24 @@ public class Figure {
 
     public void setBaseDefense(int baseDefense) {
         this.baseDefense = baseDefense;
+    }
+
+    public String getMapName() {
+        return mapName;
+    }
+
+    public void setMapName(String mapName) {
+        this.mapName = mapName;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+        StringBuilder sb = new StringBuilder(mapName);
+        sb.setCharAt(sb.length() - 1, (char)('0' + index));
+        setMapName(sb.toString());
     }
 }

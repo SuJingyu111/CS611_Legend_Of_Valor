@@ -8,18 +8,18 @@ import java.util.*;
 
 public class MonsterFactory {
 
-    private static MonsterFactory monsterCategory = new MonsterFactory();
+    private static MonsterFactory monsterFactory = new MonsterFactory();
 
     private String[] monsterTypeArr = new String[]{"Dragons", "Spirits", "Exoskeletons"};
 
-    public Monster produceNewMonster() {
+    public Monster produce() {
         Random rand = new Random();
         String type = monsterTypeArr[rand.nextInt(monsterTypeArr.length)];
         return getMonsterByType(type);
     }
 
     public static MonsterFactory getInstance(){
-        return monsterCategory;
+        return monsterFactory;
     }
 
     private Monster getMonsterByType(String monsterType) {
