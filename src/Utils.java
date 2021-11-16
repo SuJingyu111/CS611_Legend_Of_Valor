@@ -44,4 +44,8 @@ public class Utils {
             return takeYes();
         }
     }
+
+    public static boolean checkInBound(int i, int uBoundi, int j, int uBoundj) {
+        return i >= 0 && i < uBoundi && j >= 0 && j < uBoundj;
+    }
 }
