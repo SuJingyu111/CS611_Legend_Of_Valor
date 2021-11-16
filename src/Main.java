@@ -3,7 +3,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        LMH game = new LMH();
+        LOV game = new LOV();
         game.play();
     }
 
