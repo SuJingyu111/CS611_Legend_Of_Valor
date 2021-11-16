@@ -51,6 +51,14 @@ public class Cell {
         }
     }
 
+    public boolean isOccupiedByAHero() {
+        return hero != null;
+    }
+
+    public boolean isOccupiedByAMonster() {
+        return monster != null;
+    }
+
     public char getIcon() {
         return icon;
     }

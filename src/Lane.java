@@ -30,6 +30,28 @@ public class Lane {
         }
     }
 
+    public boolean putHeroAt(int row, int col, Hero hero) {
+       if (!Utils.checkInBound(row, ROW, col, COL)) {
+           return false;
+       }
+       if (cells[row][col].isOccupiedByAHero()) {
+           return false;
+       }
+       cells[row][col].setHero(hero);
+       return true;
+    }
+
+    public boolean putMonsterAt(int row, int col, Monster monster) {
+        if (!Utils.checkInBound(row, ROW, col, COL)) {
+            return false;
+        }
+        if (cells[row][col].isOccupiedByAMonster()) {
+            return false;
+        }
+        cells[row][col].setMonster(monster);
+        return true;
+    }
+
     public String[] toStringArrayByRow(int row) {
         int displayRowNum = cells[0][0].getDISPLAY_ROW_NUM();
         String[] strArr = new String[displayRowNum];
