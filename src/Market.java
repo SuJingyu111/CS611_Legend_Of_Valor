@@ -15,6 +15,16 @@ public class Market extends Cell {
     private int MIN_ITEM_NUM = 3, MAX_ITEM_NUM = 10;
 
     public Market() {
+        super('M');
+        init();
+    }
+
+    public Market(char icon) {
+        super(icon);
+        init();
+    }
+
+    private void init() {
         Random rand = new Random();
         money = rand.nextInt(INIT_MONEY_BOUND);
         itemFactory = ItemFactory.getInstance();
