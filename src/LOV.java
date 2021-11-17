@@ -1,6 +1,6 @@
 //Class for the game entity
 
-public class LOV {
+public class LOV extends RPG {
 
     private HeroFactory heroFactory;
 
@@ -24,12 +24,12 @@ public class LOV {
         //TODO
     }
 
-    private boolean ifPlayAgain() {
+    protected boolean ifPlayAgain() {
         System.out.println("Game ended! Do you want to play again? (Yes/No)");
         return Utils.takeYes();
     }
 
-    private void printEndingMsg() {
+    protected void printEndingMsg() {
         System.out.println("Thank you for playing Heroes And Monsters! Have a nice day!");
     }
 
@@ -37,11 +37,11 @@ public class LOV {
         System.out.println("Welcome to Heroes And Monsters!");
     }
 
-    private World generateWorld() {
+    protected void generateWorld() {
         System.out.println("Please enter the dimension of the world (default and minimum 8 * 8, enter one integer only): ");
         int dimension = Utils.takeInteger(WORLD_SIZE_LOWER_LIMIT, WORLD_SIZE_UPPER_LIMIT);
         System.out.println("Initializing world...");
-        return new World(dimension);
+        setWorld(new World(dimension));
     }
 
     private void proposePurchase(Hero hero, Market market) {
