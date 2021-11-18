@@ -8,7 +8,7 @@ public class HeroNexus extends Market implements FigrueGenerator{
     }
 
     @Override
-    public Figure generate() {
+    public Hero generate() {
         Hero hero = heroFactory.produce();
         setHero(hero);
         return hero;

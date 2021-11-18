@@ -12,11 +12,14 @@ public class HeroFactory{
 
     private Map<String, List<Hero>> heroTypeMap;
 
+    private int count;
+
     private String[] heroTypeArr = new String[]{"Warrior", "Sorcerer", "Paladin"};
 
     private HeroFactory() {
         heroTypeMap = new HashMap<>();
         populateHeroTypeMap();
+        count = 0;
     }
 
     public static HeroFactory getInstance(){
@@ -32,7 +35,10 @@ public class HeroFactory{
         List<Hero> heroes = heroTypeMap.get(type);
         showHeros(type);
         int heroIdx = selectHeroIdx(heroes.size());
-        return heroes.remove(heroIdx - 1);
+        count += 1;
+        Hero hero = heroes.remove(heroIdx - 1);
+        hero.setIndex(count);
+        return hero;
     }
 
     public Set<String> getHeroTypeSet() {
@@ -56,7 +62,7 @@ public class HeroFactory{
 
     private void showHeros(String type) {
         List<Hero> heroes = heroTypeMap.get(type);
-        System.out.println("Avaiable Heros: ");
+        System.out.println("Available Heroes: ");
         System.out.println("Name/mana/strength/agility/dexterity/starting money/starting experience");
         for (int j = 0; j < heroes.size(); j++) {
             System.out.println((j + 1) + " " + heroes.get(j).toString());

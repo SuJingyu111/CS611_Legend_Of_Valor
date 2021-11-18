@@ -8,7 +8,7 @@ public class MonsterNexus extends Cell implements FigrueGenerator{
     }
 
     @Override
-    public Figure generate() {
+    public Monster generate() {
         Monster monster = monsterFactory.produce();
         setMonster(monster);
         return monster;

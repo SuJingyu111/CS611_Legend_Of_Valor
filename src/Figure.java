@@ -16,8 +16,8 @@ public class Figure {
 
     private int index;
 
-    public Figure(int index) {
-        this.index = index;
+    public Figure() {
+        this.index = 0;
         if (this instanceof Hero) {
             mapName = "H" + this.index;
         }

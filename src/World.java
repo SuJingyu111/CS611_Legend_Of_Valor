@@ -22,9 +22,9 @@ public class World {
         Random rand = new Random();
         heroPosI = rand.nextInt(dimension);
         heroPosJ = rand.nextInt(dimension);
-        Cell cell = cellFactory.getCell();
+        Cell cell = cellFactory.getRandomAccessibleCell();
         while (cell instanceof InaccessibleCell) {
-            cell = cellFactory.getCell();
+            cell = cellFactory.getRandomAccessibleCell();
         }
         map[heroPosI][heroPosJ] = cell;
         initSurrounding();
@@ -87,7 +87,7 @@ public class World {
         for (int i = up; i <= down; i++) {
             for (int j = left; j <= right; j++) {
                 if (!(i == heroPosI && j == heroPosJ) && map[i][j] == null) {
-                    Cell cell = cellFactory.getCell();
+                    Cell cell = cellFactory.getRandomAccessibleCell();
                     map[i][j] = cell;
                     if (! (cell instanceof InaccessibleCell)) {
                         blocked = false;
@@ -102,9 +102,9 @@ public class World {
                 unBlockI = rand.nextInt(down - up + 1) + up;
                 unBlockJ = rand.nextInt(right - left + 1) + left;
             }
-            Cell cell = cellFactory.getCell();
+            Cell cell = cellFactory.getRandomAccessibleCell();
             if (cell instanceof InaccessibleCell) {
-                cell = cellFactory.getCell();
+                cell = cellFactory.getRandomAccessibleCell();
             }
             map[unBlockI][unBlockJ] = cell;
         }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class HeroTeam implements Iterable<Hero>{
+public class HeroTeam extends Team implements Iterable<Hero> {
 
     private List<Hero> heroes;
 
@@ -23,6 +23,7 @@ public class HeroTeam implements Iterable<Hero>{
         heroes.add(hero);
     }
 
+    @Override
     public boolean isSober() {
         int faintedCnt = 0;
         for (Hero hero : heroes) {
@@ -33,6 +34,7 @@ public class HeroTeam implements Iterable<Hero>{
         return faintedCnt != heroes.size();
     }
 
+    @Override
     public void showTeam() {
         System.out.println("Members of the team: ");
         System.out.println("Name/hp/mana/strength/agility/dexterity/money/experience/hp");
@@ -42,6 +44,7 @@ public class HeroTeam implements Iterable<Hero>{
         }
     }
 
+    @Override
     public int size() {
         return heroes.size();
     }

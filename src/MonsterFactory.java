@@ -10,12 +10,17 @@ public class MonsterFactory {
 
     private static MonsterFactory monsterFactory = new MonsterFactory();
 
+    private int count = 0;
+
     private String[] monsterTypeArr = new String[]{"Dragons", "Spirits", "Exoskeletons"};
 
     public Monster produce() {
         Random rand = new Random();
         String type = monsterTypeArr[rand.nextInt(monsterTypeArr.length)];
-        return getMonsterByType(type);
+        Monster mob = getMonsterByType(type);
+        count += 1;
+        mob.setIndex(count);
+        return mob;
     }
 
     public static MonsterFactory getInstance(){

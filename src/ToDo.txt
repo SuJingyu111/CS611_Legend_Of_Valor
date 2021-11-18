@@ -5,12 +5,14 @@ Bush extends Cells buffs hero dexterity by 10%
 Cave extends Cells buffs hero agility by 10%
 Lane- made up of cells, need way to get rows for printing
 board- is made up of Lanes, need to update toString()
+
 Hero- add attributes current Location, Original lane add abilities back and teleport while updating attack
 Monster- similar to hero class but only needs a set move and attack ability
-*Could add super class of Hero and Monster
-need to add a team super class for monster team and hero team
+*Could add super class of Hero and Monster  (using Figure for this)
+need to add a team super class for monster team and hero team (added Team for this)
 monster team extends team
 Add a Monster Factory
+
 Implement interfaces like Castable, equipable, consumable
 -----------------------
 Test existing Game logic

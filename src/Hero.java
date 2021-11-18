@@ -191,7 +191,7 @@ public class Hero extends Figure {
         return inventory.ifContains(name);
     }
 
-    public boolean useItem(String name, List<Monster> monsters) {
+    public boolean useItem(String name, MonsterTeam monsters) {
         Item item = inventory.getItemByName(name);
         if (item instanceof Armory) {
             Armory prevArmor = getCurArmor();
@@ -218,7 +218,7 @@ public class Hero extends Figure {
                     showMonsters(monsters);
                     System.out.println("Enter index: ");
                     int idx = Utils.takeInteger(1, monsters.size());
-                    Monster monster = monsters.get(idx);
+                    Monster monster = monsters.getMonsterByIdx(idx);
                     int damageMade = monster.takeDamage(getSpellDamage(((Spell) item).getDamage()));
                     System.out.println("Hero " + getName() + " caused " + damageMade + " points of damage on " + monster.getName() + " with " + item.getName());
                     if (monster.isDead()) {
@@ -241,10 +241,10 @@ public class Hero extends Figure {
         return true;
     }
 
-    private void showMonsters(List<Monster> monsters) {
+    private void showMonsters(MonsterTeam monsters) {
         int idx = 1;
         for (Monster monster : monsters) {
-            System.out.println(idx + " " + monster.fightInfo());
+            System.out.println(idx++ + " " + monster.fightInfo());
         }
     }
 

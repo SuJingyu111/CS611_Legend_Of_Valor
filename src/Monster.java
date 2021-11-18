@@ -11,6 +11,7 @@ public class Monster extends Figure {
     private int BOUNTY_PER_LEVEL = 100, EXP_GAIN_PER_LEVEL = 2, HP_PER_LEVEL = 100;
 
     public Monster(String[] args) {
+        super();
         setName(args[0]);
         setLevel(Integer.parseInt(args[1]));
         setBaseDamage((int)(0.1 * Integer.parseInt(args[2])));
@@ -19,6 +20,10 @@ public class Monster extends Figure {
         setBounty(BOUNTY_PER_LEVEL * getLevel());
         setExpGain(EXP_GAIN_PER_LEVEL * getLevel());
         setHp(HP_PER_LEVEL * getLevel());
+    }
+
+    public String toString() {
+        return getName() + "   " + getLevel() + "   " +  getHp() + "   " + getBaseDamage() + "   " + getBaseDefense();
     }
 
     public int getBounty() {

@@ -6,7 +6,7 @@ public class Fight {
 
     HeroTeam heroTeam;
 
-    List<Monster> monsters;
+    MonsterTeam monsterTeam;
 
     int bountySum;
 
@@ -16,10 +16,10 @@ public class Fight {
 
     String[] allowedOperation = new String[]{"a", "i"};
 
-    public Fight(HeroTeam heroTeam, List<Monster> monsters) {
+    public Fight(HeroTeam heroTeam, MonsterTeam monsters) {
         this.heroTeam = heroTeam;
-        this.monsters = monsters;
-        for (Monster monster : monsters) {
+        this.monsterTeam = monsters;
+        for (Monster monster : monsterTeam) {
             bountySum += monster.getBounty();
             expSum += monster.getExpGain();
         }
@@ -28,7 +28,7 @@ public class Fight {
 
     public void executeFight() {
         showMonsters();
-        while (heroTeam.isSober() && monsters.size() > 0) {
+        while (heroTeam.isSober() && monsterTeam.size() > 0) {
             heroMakeMove();
             monsterAttack();
             heroTeam.recoverAll();
@@ -51,8 +51,8 @@ public class Fight {
                     System.out.println("Monsters:");
                     showMonsters();
                     System.out.println("Choose the monster to attack: enter idx");
-                    int idx = Utils.takeInteger(1, monsters.size());
-                    Monster monster = monsters.get(idx - 1);
+                    int idx = Utils.takeInteger(1, monsterTeam.size());
+                    Monster monster = monsterTeam.getMonsterByIdx(idx - 1);
                     int dodgeCheck = rand.nextInt(100);
                     if (dodgeCheck <= monster.getDodgeChance()) {
                         System.out.println("Miss! ");
@@ -62,12 +62,12 @@ public class Fight {
                         System.out.println("Hero " + hero.getName() + " made " + damageMade + " points damage to monster " + monster.getName());
                         if (monster.isDead()) {
                             System.out.println("Monster " + monster.getName() + " is dead!");
-                            monsters.remove(monster);
+                            monsterTeam.remove(monster);
                         }
                     }
                 }
                 else if (move.equals("i")){
-                    heroUseItem(hero, monsters);
+                    heroUseItem(hero, monsterTeam);
                 }
                 else {
                     System.err.println("sth is wrong");
@@ -87,14 +87,14 @@ public class Fight {
 
     private void showMonsters() {
         int idx = 1;
-        for (Monster monster : monsters) {
+        for (Monster monster : monsterTeam) {
             System.out.println(idx++ + " " + monster.fightInfo());
         }
     }
 
     private void monsterAttack() {
         int idx = 0;
-        for (Monster monster : monsters) {
+        for (Monster monster : monsterTeam) {
             if (!heroTeam.isSober()) {
                 break;
             }
@@ -127,7 +127,7 @@ public class Fight {
         }
     }
 
-    private void heroUseItem(Hero hero, List<Monster> monsters) {
+    private void heroUseItem(Hero hero, MonsterTeam monsters) {
         hero.showInventory();
         if (!hero.hasAnyItem()) {
             System.out.println("Hero has no item. Abort.");
