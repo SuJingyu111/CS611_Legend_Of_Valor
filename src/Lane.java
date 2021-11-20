@@ -10,23 +10,30 @@ public class Lane {
 
     protected CellFactory cellFactory;
 
-    public Lane() {
+    public Lane(int x) {
         createNewCells(ROW, COL);
         cellFactory = new CellFactory();
-        initialize();
+        initialize(x);
     }
 
-    protected void initialize() {
-        for (int j = 0; j < COL; j++) {
-            cells[0][j] = cellFactory.getMonsterNexus();
-        }
-        for (int i = 1; i < ROW - 1; i++) {
-            for (int j = 0; j < COL; j++) {
-                cells[i][j] = cellFactory.getRandomAccessibleCell();
+    protected void initialize(int x) {
+        if (x==0){
+            for (int i=0; i< Row-1 ;i++){
+                cells[i][0] = cellFactory.getInaccessibleCell()
             }
         }
-        for (int j = 0; j < COL; j++) {
-            cells[ROW - 1][j] = cellFactory.getHeroNexus();
+        else{
+            for (int j = 0; j < COL; j++) {
+                cells[0][j] = cellFactory.getMonsterNexus();
+            }
+            for (int i = 1; i < ROW - 1; i++) {
+                for (int j = 0; j < COL; j++) {
+                    cells[i][j] = cellFactory.getRandomAccessibleCell();
+                }
+            }
+            for (int j = 0; j < COL; j++) {
+                cells[ROW - 1][j] = cellFactory.getHeroNexus();
+            }
         }
     }
 
@@ -88,5 +95,9 @@ public class Lane {
 
     public void setROW(int ROW) {
         this.ROW = ROW;
+    }
+    
+    public void getCells() {
+        return cells;
     }
 }
