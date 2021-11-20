@@ -9,6 +9,12 @@ public class Hero extends Figure {
     private int strength;
 
     private int dexterity;
+    
+    private int heroPosI;
+    
+    private int heroPosJ;
+    
+    private int heroPosL;
 
     private int agility;
 
@@ -156,6 +162,30 @@ public class Hero extends Figure {
 
     public int getDodgeChance() {
         return dodgeChance;
+    }
+    
+    public int getHeroPosI() {
+        return heroPosI;
+    }
+    
+    public int getHeroPosJ() {
+        return heroPosJ;
+    }
+    
+    public int getHeroPosL() {
+        return heroPosL;
+    }
+    
+    public void setHeroPosI(int x) {
+        heroPosI=x;
+    }
+    
+    public void setHeroPosJ(int x) {
+        heroPosJ=x;
+    }
+    
+    public void setHeroPosL(int x) {
+        heroPosL=x;
     }
 
     public void setDodgeChance(int dodgeChance) {
