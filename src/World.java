@@ -22,10 +22,13 @@ public class World {
     }
 
 	public void placeHeroInit() {
+		Random rand = new Random();
 		for (int i=0; i<dimension;i++){
 			Hero hero= new Hero();
 			hero.setHeroPosL(i+1);
-			map[2*i+1].placeHeroInit(hero);
+			hero.setHeroPosI(8);
+			hero.setHeroPosJ(rand.nextInt(2));
+			map[2*i+1].putHeroAt(hero.getHeroPosI(), hero.getHeroPosJ(), hero);
 		}
 	}
 
