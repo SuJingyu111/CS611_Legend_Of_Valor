@@ -1,4 +1,6 @@
 //Class for the game entity
+import java.time.*;
+import java.util.Scanner;
 
 public class LOV extends RPG {
 
@@ -20,8 +22,59 @@ public class LOV extends RPG {
         printEndingMsg();
     }
 
+    public void initGame() {
+        System.out.println();
+        System.out.println("       \u001B[33m LEGEND OF VALOR \u001B[0m");
+        System.out.println();
+        System.out.println("  \u001B[33mWelcome to the world of Legends!");
+        System.out.println();
+        System.out.println("  Your goal is to reach Monsters' Nexus while preventing Monsters reaching Hero Nexus.");
+        System.out.println("  You may encounter fight during you adventure.");
+        System.out.println("  Your heroes gain money and experience when they defeat the monsters.");
+        System.out.println("  Hero Nexus are also Markets where you can buy and sell things.");
+        System.out.println("  To armed up your heroes, you may want to buy useful weapons, armors, potions, or spells and sell those you no longer needed.");
+        System.out.println("  Loading game elements...\u001B[0m");
+    }
+
+    public void displayInfo() {
+        System.out.println();
+        System.out.println("       \u001B[33m CONTROL INFO \u001B[0m");
+        System.out.println();
+        System.out.println("        W/w - move up");
+        System.out.println("        A/a - move left");
+        System.out.println("        S/s - move down");
+        System.out.println("        D/d - move right");
+        System.out.println("        Q/q - quit game");
+        System.out.println("        I/i - show information");
+        System.out.println();
+        System.out.println("       \u001B[33m MAP INFO \u001B[0m");
+        System.out.println();
+        System.out.println("        H - Hero position");
+        System.out.println("        M - Monster position");
+        System.out.println("        X - inaccessible tile");
+        System.out.println("        N - Nexus");
+        System.out.println("        P - Plain cell");
+        System.out.println("        B - Bush cell");
+        System.out.println("        K - Koulou cell");
+        System.out.println("        C - Cave cell");
+        System.out.println();
+        System.out.print("Enter C/c to continue play or Q/q to exit game:");
+        Scanner in = new Scanner(System.in);
+        boolean done = false;
+        while (!done) {
+            String next = in.nextLine();
+            if (next.equals("Q") || next.equals("q")) {
+                System.exit(0);
+            }
+            if (next.equals("C") || next.equals("c")) {
+                done = true;
+            }
+        }
+    }
+
     public void runGame(){
         //TODO
+        initGame();
     }
 
     protected boolean ifPlayAgain() {

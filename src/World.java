@@ -35,7 +35,7 @@ public class World {
 			System.out.println("Select the type of hero on Lane " + i + ": ");
 			Hero hero= heroFactory.produce();
 			setFigurePos(hero, i);
-			heroTeam.add(hero);
+			heroTeam.addHero(hero);
 			map[2*i+1].putHeroAt(hero.getPosI(), hero.getPosJ(), hero);
 		}
 	}
@@ -44,7 +44,7 @@ public class World {
 		for (int i=0; i<dimension;i++){
 			Monster monster = monsterFactory.produce();
 			setFigurePos(monster, i);
-			monsterTeam.add(monster);
+			monsterTeam.addMonster(monster);
 			map[2*i+1].putMonsterAt(monster.getPosI(), monster.getPosJ(), monster);
 		}
 	}

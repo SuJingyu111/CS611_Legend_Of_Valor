@@ -18,7 +18,7 @@ public class Lane {
 
     protected void initialize() {
         for (int j = 0; j < COL; j++) {
-                cells[0][j] = cellFactory.getMonsterNexus();
+            cells[0][j] = cellFactory.getMonsterNexus();
         }
         for (int i = 1; i < ROW - 1; i++) {
             for (int j = 0; j < COL; j++) {
