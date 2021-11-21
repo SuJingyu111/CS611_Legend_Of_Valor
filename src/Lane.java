@@ -10,30 +10,23 @@ public class Lane {
 
     protected CellFactory cellFactory;
 
-    public Lane(int x) {
+    public Lane() {
         createNewCells(ROW, COL);
         cellFactory = new CellFactory();
-        initialize(x);
+        initialize();
     }
 
-    protected void initialize(int x) {
-        if (x==0){
-            for (int i=0; i< Row-1 ;i++){
-                cells[i][0] = cellFactory.getInaccessibleCell()
+    protected void initialize() {
+        for (int j = 0; j < COL; j++) {
+                cells[0][j] = cellFactory.getMonsterNexus();
+        }
+        for (int i = 1; i < ROW - 1; i++) {
+            for (int j = 0; j < COL; j++) {
+                cells[i][j] = cellFactory.getRandomAccessibleCell();
             }
         }
-        else{
-            for (int j = 0; j < COL; j++) {
-                cells[0][j] = cellFactory.getMonsterNexus();
-            }
-            for (int i = 1; i < ROW - 1; i++) {
-                for (int j = 0; j < COL; j++) {
-                    cells[i][j] = cellFactory.getRandomAccessibleCell();
-                }
-            }
-            for (int j = 0; j < COL; j++) {
-                cells[ROW - 1][j] = cellFactory.getHeroNexus();
-            }
+        for (int j = 0; j < COL; j++) {
+            cells[ROW - 1][j] = cellFactory.getHeroNexus();
         }
     }
 
@@ -60,7 +53,8 @@ public class Lane {
     }
 
     public String[] toStringArrayByRow(int row) {
-        int displayRowNum = cells[0][0].getDISPLAY_ROW_NUM();
+        //System.out.println(row);
+        int displayRowNum = Cell.DISPLAY_ROW_NUM;
         String[] strArr = new String[displayRowNum];
         Arrays.fill(strArr, "");
         for (int j = 0; j < COL - 1; j++) {
@@ -69,6 +63,9 @@ public class Lane {
                 strArr[r] += cellStrArr[r];
                 strArr[r] += "  ";
             }
+        }
+        if (cells[row][COL - 1] == null) {
+            System.out.println("row " +  row + " " + (COL - 1) + "It is null");
         }
         String[] cellStrArr = cells[row][COL - 1].toStringArrayByRow();
         for (int r = 0; r < displayRowNum; r++) {
@@ -97,7 +94,25 @@ public class Lane {
         this.ROW = ROW;
     }
     
-    public void getCells() {
+    public Cell[][] getCells() {
         return cells;
+    }
+
+    public boolean containMonsterInRow(int row) {
+        for (int j = 0; j < COL; j++) {
+            if (cells[row][j].getMonster() != null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean containHeroInRow(int row) {
+        for (int j = 0; j < COL; j++) {
+            if (cells[row][j].getHero() != null) {
+                return true;
+            }
+        }
+        return false;
     }
 }

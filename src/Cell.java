@@ -8,7 +8,7 @@ public class Cell {
 
     private Monster monster;
 
-    private int DISPLAY_ROW_NUM = 3;
+    public static final int DISPLAY_ROW_NUM = 3;
 
     private boolean visited;
 
@@ -91,11 +91,4 @@ public class Cell {
         this.visited = visited;
     }
 
-    public int getDISPLAY_ROW_NUM() {
-        return DISPLAY_ROW_NUM;
-    }
-
-    public void setDISPLAY_ROW_NUM(int DISPLAY_ROW_NUM) {
-        this.DISPLAY_ROW_NUM = DISPLAY_ROW_NUM;
-    }
 }
