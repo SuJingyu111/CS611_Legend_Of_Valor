@@ -14,7 +14,7 @@ The program was compiled and executed on a machine running MACOS.
 Colorful printing implemented.
 
 Design patterns:
-Factory pattern, used in HeroFactory and ItemFactory
+Factory pattern, used in HeroFactory, ItemFactory, MonsterFactory, CellFactory, and LaneFactory.
 Singleton Pattern, used in ItemFactory and MonsterFactory. Do not want more than 1, used only in Market & Common Cells.
 
 Class Intro:
