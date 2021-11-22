@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="back to nexus bug fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Castable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Castable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cave.java" afterDir="false" />
+    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="Readme adjustment">
+      <change beforePath="$PROJECT_DIR$/src/Bush.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bush.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cave.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cave.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fight.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroBoostable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroBoostable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroNexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroNexus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InaccessibleLane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleLane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Koulou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koulou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroNexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroNexus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InaccessibleLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleLane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Koulou.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koulou.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LOV.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LOV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonsterNexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterNexus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonsterTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterTeam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nexus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Purchasable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Purchasable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spell.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterNexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterNexus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterTeam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637086758197</updated>
-      <workItem from="1637547254627" duration="2972000" />
+      <workItem from="1637547254627" duration="3705000" />
     </task>
     <task id="LOCAL-00001" summary="added Team, adjusted Monster and Hero, and added indexing for figures">
       <created>1637279852661</created>
@@ -130,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637549497137</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Display adjustments &amp; comments">
+      <created>1637550824215</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637550824215</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Readme adjustment">
+      <created>1637550984615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637550984615</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +163,8 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="Item Interfaces" />
     <MESSAGE value="back to nexus bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="back to nexus bug fix" />
+    <MESSAGE value="Display adjustments &amp; comments" />
+    <MESSAGE value="Readme adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme adjustment" />
   </component>
 </project>

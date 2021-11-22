@@ -31,8 +31,7 @@ public class MonsterFactory {
         try {
             Random rand = new Random();
             String fileName = monsterType + ".txt";
-            File file = new File(fileName);
-            BufferedReader br = new BufferedReader(new FileReader(file));
+            BufferedReader br = Utils.getBufferedReaderByFileName(fileName);
             br.readLine();
             List<Monster> monsters = new ArrayList<>();
             String s;

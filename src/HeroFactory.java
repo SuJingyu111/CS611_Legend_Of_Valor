@@ -83,8 +83,7 @@ public class HeroFactory{
         try {
             for (String heroType : heroTypeArr) {
                 String fileName = heroType + "s" + ".txt";
-                File file = new File(fileName);
-                BufferedReader br = new BufferedReader(new FileReader(file));
+                BufferedReader br = Utils.getBufferedReaderByFileName(fileName);
                 br.readLine();
                 List<Hero> heroes = new ArrayList<>();
                 heroTypeMap.put(heroType, heroes);

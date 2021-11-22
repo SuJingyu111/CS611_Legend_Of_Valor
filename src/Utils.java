@@ -1,5 +1,9 @@
 //Utils class for all kinds of handy methods
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.List;
 import java.util.Scanner;
 
@@ -50,5 +54,10 @@ public class Utils {
 
     public static boolean checkInBound(int i, int uBoundi, int j, int uBoundj) {
         return i >= 0 && i < uBoundi && j >= 0 && j < uBoundj;
+    }
+
+    public static BufferedReader getBufferedReaderByFileName(String fileName) throws FileNotFoundException {
+        File file = new File(fileName);
+        return new BufferedReader(new FileReader(file));
     }
 }
