@@ -386,9 +386,9 @@ public class Hero extends Figure {
             System.out.println("Already in your Nexus!");
             return true;
         }
-        curCell.leave(true);
         Random rand = new Random();
         world.putHeroAt(getPosL(), world.getROW() - 1, rand.nextInt(2), this);
+        curCell.leave(true);
         return false;
     }
 }
