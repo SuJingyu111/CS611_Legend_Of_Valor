@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="small changes; added some colors">
+      <change beforePath="$PROJECT_DIR$/src/Armory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Armory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Armory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Armory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dragons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dragons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dragons.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exoskeletons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exoskeletons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exoskeletons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exoskeletons.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FigrueGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FireSpells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FireSpells.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FireSpells.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FireSpells.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroBoostable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroBoostable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroNexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroNexus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroTeam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IceSpells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IceSpells.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IceSpells.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/IceSpells.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InaccessibleCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InaccessibleLane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleLane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Koulou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koulou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LOV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaneFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LightningSpells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightningSpells.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LightningSpells.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightningSpells.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterNexus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterNexus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterTeam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paladin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paladins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlainCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlainCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Potions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Potions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Potions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Potions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Purchasable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Purchasable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorcerer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorcerer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sorcerers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorcerers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spirits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spirits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spirits.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spirits.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Warriors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warriors.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weaponry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weaponry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Weaponry.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weaponry.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/readme.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="210nDqCakrzn4fQQqMPN2M7z0PF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Legends_Monsters_Heroes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="" />
+      <created>1637086758197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637086758197</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added Team, adjusted Monster and Hero, and added indexing for figures">
+      <created>1637279852661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637279852661</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added MonsterTeam">
+      <created>1637456243970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637456243970</updated>
+    </task>
+    <task id="LOCAL-00003" summary="small changes; added some colors">
+      <created>1637537132710</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637537132710</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added Team, adjusted M and H, and added indexing for figures" />
+    <MESSAGE value="added Team, adjusted Monster and Hero, and added indexing for figures" />
+    <MESSAGE value="added MonsterTeam" />
+    <MESSAGE value="small changes; added some colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes; added some colors" />
+  </component>
+</project>
