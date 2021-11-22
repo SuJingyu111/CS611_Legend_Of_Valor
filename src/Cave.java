@@ -1,3 +1,5 @@
+//Class for cave cells
+
 public class Cave extends Cell implements HeroBoostable{
 
     private int origAgility;

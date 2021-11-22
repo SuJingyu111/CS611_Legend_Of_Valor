@@ -1,3 +1,5 @@
+//Class or nexus of monsters
+
 public class MonsterNexus extends Cell implements Nexus {
 
     private static MonsterFactory monsterFactory;

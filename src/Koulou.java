@@ -1,3 +1,5 @@
+//Class for cell type Koulou
+
 public class Koulou extends Cell implements HeroBoostable{
 
     private int origStrength;

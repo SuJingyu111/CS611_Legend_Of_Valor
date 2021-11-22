@@ -1,3 +1,5 @@
+//Class for bush cells
+
 public class Bush extends Cell implements HeroBoostable {
 
     private int origDexterity;

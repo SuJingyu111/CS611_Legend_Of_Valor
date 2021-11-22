@@ -67,4 +67,13 @@ public class Monster extends Figure {
     public void forward(World world) {
         world.putMonsterAt(getPosL(), getPosI() + 1, getPosJ(), this);
     }
+
+    public void attack(Hero hero) {
+        int damage = -1;
+        if (hero.isSober()) {
+            damage = hero.takeDamage(getBaseDamage());
+        }
+        System.out.println("\u001B[31mMonster " + getName() + " made " + damage +
+                " points damage to hero " + hero.getName() + "\u001B[0m");
+    }
 }

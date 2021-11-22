@@ -25,7 +25,7 @@ public class LOV extends RPG {
         World world = getWorld();
         int round = 0;
         while (!(world.monsterWon() || world.heroWon())) {
-            System.out.println("Round " + round + ":");
+            System.out.println("Round " + (round + 1) + ":");
             if (round % 8 == 0) {
                 world.generateMonsters(getMonsterTeam());
             }
@@ -148,7 +148,7 @@ public class LOV extends RPG {
     }
 
     private Team surroundingEnemies(int enemyIndicator, Figure fig) {
-        int[][] directions = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 0}, {-1, -1}};
+        int[][] directions = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
         int lane = fig.getPosL(), i = fig.getPosI(), j = fig.getPosJ();
         Team team;
         if (enemyIndicator == ENEMY_IS_MONSTER) {

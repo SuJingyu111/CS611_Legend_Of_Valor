@@ -1,3 +1,5 @@
+//Class for a general team
+
 public abstract class Team {
 
     public abstract boolean isSober();

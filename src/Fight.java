@@ -14,8 +14,7 @@ public class Fight {
 
     Set<String> allowedOperationSet;
 
-    String[] allowedOperation = new String[]{"a", "i"};
-
+    String[] allowedOperation = new String[]{"at", "i"};
 
     public Fight(Hero hero, Monster monster) {
         this.hero = hero;
@@ -26,6 +25,7 @@ public class Fight {
     }
 
     public void executeFight() {
+        System.out.println("Fight start!");
         showMonster();
         while (hero.isSober() && !monster.isDead()) {
             heroMakeMove();
@@ -35,30 +35,16 @@ public class Fight {
     }
 
     private void heroMakeMove() {
-        Random rand = new Random();
         hero.showFightingStat();
         if (hero.isSober()) {
-            System.out.println("Choose your move: a - attack, i - check inventory");
+            System.out.println("Choose your move: at - attack, i - check inventory");
             String move = takeOperation();
             if (move.equals("i") && !hero.hasAnyItem()) {
                 System.out.println("\u001B[31mNo items! Automatically turn to attack \u001B[0m");
-                move = "a";
+                move = "at";
             }
-            if (move.equals("a")) {
-                int dodgeCheck = rand.nextInt(100);
-                if (dodgeCheck <= monster.getDodgeChance()) {
-                    System.out.println("Miss! ");
-                }
-                else {
-                    int damageMade = monster.takeDamage(hero.getDamage());
-                    System.out.println(" ");
-                    System.out.println("\u001B[31mHero " + hero.getName() + " made " + damageMade +
-                            " points damage to monster " + monster.getName() + "\u001B[0m");
-                    System.out.println(" ");
-                    if (monster.isDead()) {
-                        System.out.println("Monster " + monster.getName() + " is dead!");
-                    }
-                }
+            if (move.equals("at")) {
+                hero.attack(monster);
             }
             else if (move.equals("i")){
                 hero.heroUseItem(monster);
@@ -68,7 +54,6 @@ public class Fight {
             }
         }
     }
-
 
     private String takeOperation() {
         String input = Utils.takeInput();
@@ -85,10 +70,7 @@ public class Fight {
     }
 
     private void monsterAttack() {
-        int idx = 0;
-        if (hero.isSober()) {
-            hero.takeDamage(monster.getBaseDamage());
-        }
+        monster.attack(hero);
     }
 
 

@@ -1,3 +1,5 @@
+//Factory class that produces lanes
+
 public class LaneFactory {
 
     public Lane getLane(int x) {

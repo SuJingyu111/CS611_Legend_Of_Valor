@@ -391,4 +391,22 @@ public class Hero extends Figure {
         curCell.leave(true);
         return false;
     }
+
+    public void attack(Monster monster) {
+        Random rand = new Random();
+        int dodgeCheck = rand.nextInt(100);
+        if (dodgeCheck <= monster.getDodgeChance()) {
+            System.out.println("Miss! ");
+        }
+        else {
+            int damageMade = monster.takeDamage(getDamage());
+            System.out.println(" ");
+            System.out.println("\u001B[31mHero " + getName() + " made " + damageMade +
+                    " points damage to monster " + monster.getName() + "\u001B[0m");
+            System.out.println(" ");
+            if (monster.isDead()) {
+                System.out.println("Monster " + monster.getName() + " is dead!");
+            }
+        }
+    }
 }

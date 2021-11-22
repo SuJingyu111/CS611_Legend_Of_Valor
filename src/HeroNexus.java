@@ -1,3 +1,5 @@
+//Nexus for heros
+
 public class HeroNexus extends Market implements Nexus {
 
     private static HeroFactory heroFactory;

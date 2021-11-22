@@ -1,3 +1,5 @@
+//Class for lanes composed of inaccessible cells.
+
 public class InaccessibleLane extends Lane {
 
     private int INACCESSIBLE_COL = 1;
