@@ -1,6 +1,6 @@
 //Class for general items, inherited by Armory, Spell, Potion, Weaponry
 
-public class Item {
+public class Item implements Purchasable {
 
     private String name;
 

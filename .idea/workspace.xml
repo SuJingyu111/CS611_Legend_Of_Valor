@@ -1,55 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="small changes; added some colors">
-      <change beforePath="$PROJECT_DIR$/src/Armory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Armory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bush.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bush.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cave.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CellFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/CellFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dragons.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dragons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exoskeletons.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exoskeletons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fight.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FireSpells.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/FireSpells.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroBoostable.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroBoostable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroNexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroNexus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroTeam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IceSpells.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/IceSpells.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InaccessibleCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InaccessibleLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/InaccessibleLane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ItemFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Koulou.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Koulou.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LOV.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lane.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LaneFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaneFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LightningSpells.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightningSpells.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Market.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonsterNexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterNexus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonsterTeam.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterTeam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nexus.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nexus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paladin.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paladin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlainCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlainCell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Potions.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Potions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Purchasable.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Purchasable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RPG.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/RPG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sorcerer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sorcerer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spell.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spirits.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spirits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weaponry.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weaponry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.class" afterDir="false" />
+    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="bug fix">
+      <change afterPath="$PROJECT_DIR$/src/Castable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LOV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -108,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637086758197</updated>
-      <workItem from="1637547254627" duration="592000" />
+      <workItem from="1637547254627" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="added Team, adjusted Monster and Hero, and added indexing for figures">
       <created>1637279852661</created>
@@ -131,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637537132710</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bug fix">
+      <created>1637547893448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637547893448</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +119,7 @@
     <MESSAGE value="added Team, adjusted Monster and Hero, and added indexing for figures" />
     <MESSAGE value="added MonsterTeam" />
     <MESSAGE value="small changes; added some colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes; added some colors" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
 </project>

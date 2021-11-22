@@ -1,6 +1,6 @@
 //Abstract class for spells, inherits Item, inherited by FireSpells, IceSpells, LightningSpells
 
-public abstract class Spell extends Item{
+public abstract class Spell extends Item implements Castable{
 
     private int damage;
 
