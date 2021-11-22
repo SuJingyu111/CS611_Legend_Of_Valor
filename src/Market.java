@@ -36,7 +36,7 @@ public class Market extends Cell {
         Random rand = new Random();
         int itemCnt = rand.nextInt(MAX_ITEM_NUM - MIN_ITEM_NUM) + MIN_ITEM_NUM;
         for (int i = 0; i < itemCnt; i++) {
-            inventory.add(itemFactory.getRandomItem());
+            inventory.add(itemFactory.produce());
         }
     }
 

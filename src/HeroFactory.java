@@ -1,12 +1,10 @@
 //Factory that creates heroes
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
-public class HeroFactory{
+public class HeroFactory implements RandomFactory<Hero> {
 
     private static HeroFactory heroFactory = new HeroFactory();
 

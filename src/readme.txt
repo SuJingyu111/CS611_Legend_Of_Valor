@@ -14,7 +14,7 @@ The program was compiled and executed on a machine running MACOS.
 Colorful printing implemented.
 
 Design patterns:
-Factory pattern, used in HeroFactory, ItemFactory, MonsterFactory, CellFactory, and LaneFactory.
+RandomFactory pattern, used in HeroFactory, ItemFactory, MonsterFactory, CellFactory, and LaneFactory.
 Singleton Pattern, used in ItemFactory and MonsterFactory. Do not want more than 1, used only in Market & Common Cells.
 
 Class Intro:
@@ -64,7 +64,7 @@ HeroBoostable
 - Interface for cells that boost hero stats. Implemented by Bush, Cave and Koulou.
 
 HeroFactory
-- Factory that creates heroes.
+- RandomFactory that creates heroes.
 
 HeroNexus
 - Nexus for Heroes. Implements Nexus.
@@ -85,7 +85,7 @@ Item
 - Class for general items, inherited by Armory, Spell, Potion, Weaponry
 
 ItemFactory
-- Factory class that creates all kinds of items
+- RandomFactory class that creates all kinds of items
 
 Koulou
 - Cell type Koulou, inherits Cell. Also implements HeroBoostable.
@@ -94,7 +94,7 @@ Lane
 - Class for lanes in World. Each lane is composed of cells.
 
 LaneFactory
-- Factory that creates lanes.
+- RandomFactory that creates lanes.
 
 LightningSpells
 - Class for lightning spells, inherits Spell
@@ -106,7 +106,7 @@ Monster
 - Class for general monsters, inherits Figure, inherited by Dragon, Exoskeleton, and Spirit
 
 MonsterFactory
-- Factory class that creates monsters
+- RandomFactory class that creates monsters
 
 Monsternexus
 - Nexus for Monsters. Implements Nexus.

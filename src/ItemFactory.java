@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
-public class ItemFactory {
+public class ItemFactory implements RandomFactory<Item> {
 
     private static ItemFactory itemCategory = new ItemFactory();
 
@@ -22,7 +22,7 @@ public class ItemFactory {
         return itemCategory;
     }
 
-    public Item getRandomItem() {
+    public Item produce() {
         Random rand = new Random();
         String itemType = itemTypes[rand.nextInt(itemTypes.length)];
         List<String[]> itemParaList = new ArrayList<>();

@@ -1,12 +1,10 @@
 //Factory class that creates monsters
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
-public class MonsterFactory {
+public class MonsterFactory implements RandomFactory<Monster> {
 
     private static MonsterFactory monsterFactory = new MonsterFactory();
 

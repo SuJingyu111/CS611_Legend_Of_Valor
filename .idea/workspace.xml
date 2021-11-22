@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="Added Design Evaluation" />
+    <list default="true" id="33f5bd91-815a-4d8f-83d0-3ce492409965" name="Changes" comment="code format adjustment">
+      <change afterPath="$PROJECT_DIR$/src/RandomFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_src/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/old_src/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src copy/ToDo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src copy/ToDo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src copy/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src copy/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Design Evaluation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Design_Evaluation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fight.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeroFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Market.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/readme.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +79,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637086758197</updated>
-      <workItem from="1637547254627" duration="3705000" />
+      <workItem from="1637547254627" duration="3755000" />
+      <workItem from="1637551661979" duration="2428000" />
     </task>
     <task id="LOCAL-00001" summary="added Team, adjusted Monster and Hero, and added indexing for figures">
       <created>1637279852661</created>
@@ -118,12 +138,12 @@
       <option name="project" value="LOCAL" />
       <updated>1637550984615</updated>
     </task>
-    <task id="LOCAL-00009" summary="Readme adjustment">
-      <created>1637551636639</created>
+    <task id="LOCAL-00009" summary="code format adjustment">
+      <created>1637551553393</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1637551636639</updated>
+      <updated>1637551553393</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
@@ -153,6 +173,7 @@
     <MESSAGE value="back to nexus bug fix" />
     <MESSAGE value="Display adjustments &amp; comments" />
     <MESSAGE value="Readme adjustment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme adjustment" />
+    <MESSAGE value="code format adjustment" />
+    <option name="LAST_COMMIT_MESSAGE" value="code format adjustment" />
   </component>
 </project>

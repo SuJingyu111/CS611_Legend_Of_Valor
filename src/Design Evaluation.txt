@@ -1,9 +1,0 @@
-Legend: Monster And Heros
-Jingyu Su U58115442
-Shen Yan U92118991
-
-
-We chose Jingyu's code because of his implementation of Factory classes, and we got positive feedbacks from TA. Based on previous assignment, we added several classes to guarantee our OO design; Team.java was added, which is inherited by newly-added MonsterTeam.java. Game.java is added to make the hierarchy Game - RPG - LOV clearer and easier for future implementations of other games. Our expectation was to make use of existing classes as much as possible, and we believe we achieved that. A lot of classes are reused for LOV (Hero, Monster, Items, Cell, Fight etc.) despite some structure changes: e.g. Market is now inherited by HeroNexus.  
-
-
-

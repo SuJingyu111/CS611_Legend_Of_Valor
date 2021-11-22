@@ -1,0 +1,39 @@
+Legend: Monster And Heros
+Jingyu Su U58115442
+Shen Yan U92118991
+
+
+We chose Jingyu's code because of his implementation of Factory classes, and this helps us separate object generation logic from other parts.
+This makes the code more organized.
+Also, singleton pattern is used, in order to maintain consistency in Hero/Monster generation.
+
+Different kinds of Monsters, Heroes, Items, and Cells have their own class, making the code more extendable.
+
+Monster and Hero extends Figure, having a Figure class will allow us to create different kinds of characters, NPCs, for instance.
+
+We also separated the fighting process to a Fight class. This way it will be easier to locate and alter fighting logic, as well as creating different
+kinds of fights via inheritance if necessary.
+
+Since inventories are needed both by Hero and Market, it would be good to have a single Inventory class.
+
+Based on previous assignment, we added several classes to guarantee our OO design:
+Team was added, which is inherited by newly-added MonsterTeam and HeroTeam, they both implement Iterable interface, and made it easier to access and manage Monsters & Heroes.
+Game and RPG.java is added to make the hierarchy Game - RPG - LOV clearer and easier for future implementations of other games.
+
+We also added a few interfaces.
+Purchasable and Castable are interfaces to mark/endow different behaviors items supports.
+Purchasable is implemented by Item, Castable by Spells.
+Nexus and HeroBoostable are implemented by Cells, to fulfill different functionalities.
+RandomFactory Interface is implemented by Hero/Item/MonsterFactory to produce random objects.
+
+There are two types of Nexus classes. The reason for this is because they are inherently different. HeroNexus should inherit
+Market but MonsterNexus shouldn't. So we made Nexus an interface that can be implemented by Cells, and it can be used to create Nexuses of all kinds.
+
+Cave, Kuoluo, Bush are Cell classes that implemented HeroBoostable interface.
+
+Our expectation was to make use of existing classes as much as possible, and we believe we achieved that.
+A lot of classes are reused for LOV (Hero, Monster, Items, Cell, Fight etc.) despite some structure changes: e.g. Market is now inherited by HeroNexus.
+
+
+
+

@@ -64,7 +64,6 @@ public class Fight {
         return input;
     }
 
-
     private void showMonster() {
         System.out.println(monster.fightInfo());
     }
@@ -72,7 +71,6 @@ public class Fight {
     private void monsterAttack() {
         monster.attack(hero);
     }
-
 
     private void reviveAndReward() {
         if (!hero.isSober()) {
