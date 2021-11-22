@@ -63,4 +63,8 @@ public class Monster extends Figure {
     public boolean isDead() {
         return getHp() <= 0;
     }
+
+    public void forward(World world) {
+        world.putMonsterAt(getPosL(), getPosI() + 1, getPosJ(), this);
+    }
 }

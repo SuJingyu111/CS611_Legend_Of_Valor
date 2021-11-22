@@ -37,10 +37,10 @@ public class MonsterTeam extends Team implements Iterable<Monster> {
     }
 
     public Monster getMonsterByIdx(int index) {
-        return monsters.get(index);
+        return monsters.get(index - 1);
     }
 
-    public void addMonster(Monster monster) {
+    public void add(Monster monster) {
         monsters.add(monster);
     }
 
@@ -52,4 +52,5 @@ public class MonsterTeam extends Team implements Iterable<Monster> {
     public void remove(Monster monster) {
         monsters.remove(monster);
     }
+
 }

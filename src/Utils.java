@@ -14,6 +14,9 @@ public class Utils {
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
         try {
+            if (input.equalsIgnoreCase("q")) {
+                return -1;
+            }
             int number = Integer.parseInt(input);
             while (!(number >= lowerBound && number <= upperBound)) {
                 number = takeInteger(lowerBound, upperBound);

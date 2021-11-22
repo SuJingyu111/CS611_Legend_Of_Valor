@@ -1,5 +1,5 @@
 public abstract class Game {
-    //TODO
+
     public void play(){
         do {
             runGame();

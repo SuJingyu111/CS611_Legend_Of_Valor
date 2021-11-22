@@ -8,7 +8,7 @@ public class Sorcerer extends Hero{
 
     public void levelUp() {
         super.levelUp();
-        setDexterity(getDexterity() + (int)(getDexterity() * LEVEL_UP_INCREASE));
-        setAgility(getAgility() + (int)(getAgility() * LEVEL_UP_INCREASE));
+        setDexterity(getDexterity() + (int)(getDexterity() * getLEVEL_UP_INCREASE()));
+        setAgility(getAgility() + (int)(getAgility() * getLEVEL_UP_INCREASE()));
     }
 }

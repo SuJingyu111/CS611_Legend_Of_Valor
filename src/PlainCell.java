@@ -4,8 +4,4 @@ public class PlainCell extends Cell {
         super('P');
     }
 
-    protected void fillContents(StringBuilder sb) {
-        sb.append("       ");
-    }
-
 }

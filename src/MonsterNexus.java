@@ -1,4 +1,4 @@
-public class MonsterNexus extends Cell implements FigrueGenerator{
+public class MonsterNexus extends Cell implements Nexus {
 
     private static MonsterFactory monsterFactory;
 

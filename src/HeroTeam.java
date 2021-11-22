@@ -19,7 +19,7 @@ public class HeroTeam extends Team implements Iterable<Hero> {
         return heroes.iterator();
     }
 
-    public void addHero(Hero hero) {
+    public void add(Hero hero) {
         heroes.add(hero);
     }
 
@@ -62,7 +62,7 @@ public class HeroTeam extends Team implements Iterable<Hero> {
 
     public void lostPenalty() {
         for (Hero hero : heroes) {
-            hero.setMoney(hero.getMoney() / 2);
+            hero.lostPenalty();
         }
     }
 }

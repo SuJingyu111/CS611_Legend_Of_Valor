@@ -1,6 +1,6 @@
 //Class for general heroes, inherits Figure, inherited by Warrior, Paladin, and Sorcerer
 
-import java.util.List;
+import java.util.*;
 
 public class Hero extends Figure {
 
@@ -9,12 +9,6 @@ public class Hero extends Figure {
     private int strength;
 
     private int dexterity;
-    
-    private int heroPosI;
-    
-    private int heroPosJ;
-    
-    private int heroPosL;
 
     private int agility;
 
@@ -52,7 +46,14 @@ public class Hero extends Figure {
 
     private double AGILITY_TO_DODGE = 0.2;
 
-    protected double LEVEL_UP_INCREASE = 0.05;
+    private double LEVEL_UP_INCREASE = 0.05;
+
+    private String[] legalActions = new String[]{"at", "w", "a", "s", "d", "t", "b", "i", "stat"};
+
+    private String[] actionNotes = new String[]{" - Attack a monster", " - Move Up", " - Move Left", " - Move Down",
+            " - Move Right", " - Teleport", " - Back to Nexus", " - Check Inventory", " - Show Stat"};
+
+    private Set<String> legalActionSet;
 
     public Hero(String[] args) {
         //Name/mana/strength/agility/dexterity/starting money/starting experience
@@ -73,6 +74,7 @@ public class Hero extends Figure {
         setDodgeChance((int)(AGILITY_TO_DODGE * getAgility()));
         setBaseDamage(INIT_DAMAGE);
         setBaseDefense(INIT_DEFENSE);
+        legalActionSet = new HashSet<>(Arrays.asList(legalActions));
     }
 
     public void addToInventory(Item item) {
@@ -163,30 +165,6 @@ public class Hero extends Figure {
     public int getDodgeChance() {
         return dodgeChance;
     }
-    
-    public int getHeroPosI() {
-        return heroPosI;
-    }
-    
-    public int getHeroPosJ() {
-        return heroPosJ;
-    }
-    
-    public int getHeroPosL() {
-        return heroPosL;
-    }
-    
-    public void setHeroPosI(int x) {
-        heroPosI=x;
-    }
-    
-    public void setHeroPosJ(int x) {
-        heroPosJ=x;
-    }
-    
-    public void setHeroPosL(int x) {
-        heroPosL=x;
-    }
 
     public void setDodgeChance(int dodgeChance) {
         this.dodgeChance = dodgeChance;
@@ -213,6 +191,14 @@ public class Hero extends Figure {
         return damage;
     }
 
+    public double getLEVEL_UP_INCREASE() {
+        return LEVEL_UP_INCREASE;
+    }
+
+    public void setLEVEL_UP_INCREASE(double LEVEL_UP_INCREASE) {
+        this.LEVEL_UP_INCREASE = LEVEL_UP_INCREASE;
+    }
+
     public void showInventory() {
         System.out.println(inventory);
     }
@@ -221,7 +207,33 @@ public class Hero extends Figure {
         return inventory.ifContains(name);
     }
 
-    public boolean useItem(String name, MonsterTeam monsters) {
+    public boolean heroUseItem(Monster monster) {
+        showInventory();
+        if (!hasAnyItem()) {
+            System.out.println("Hero has no item. Abort.");
+            return false;
+        }
+        System.out.println("What item do you want to use? Enter its name: ");
+        String input = Utils.takeInput();
+        while (!hasItem(input)) {
+            System.out.println("No such item! Try again!");
+            input = Utils.takeInput();
+        }
+        while (!useItem(input, monster)) {
+            showInventory();
+            System.out.println("What item do you want to use? Enter its name: (q/Q to quit)");
+            input = Utils.takeInput();
+            if (input.equalsIgnoreCase("q")) {
+                return false;
+            }
+            while (!hasItem(input)) {
+                input = Utils.takeInput();
+            }
+        }
+        return true;
+    }
+
+    private boolean useItem(String name, Monster monster) {
         Item item = inventory.getItemByName(name);
         if (item instanceof Armory) {
             Armory prevArmor = getCurArmor();
@@ -242,18 +254,12 @@ public class Hero extends Figure {
                 return false;
             }
             else {
-                if (monsters != null) {
+                if (monster != null) {
                     setCurMana(getCurMana() - manaCost);
-                    System.out.println("Choose your victim monster from : ");
-                    showMonsters(monsters);
-                    System.out.println("Enter index: ");
-                    int idx = Utils.takeInteger(1, monsters.size());
-                    Monster monster = monsters.getMonsterByIdx(idx);
                     int damageMade = monster.takeDamage(getSpellDamage(((Spell) item).getDamage()));
                     System.out.println("Hero " + getName() + " caused " + damageMade + " points of damage on " + monster.getName() + " with " + item.getName());
                     if (monster.isDead()) {
                         System.out.println("Monster " + monster.getName() + " is dead!");
-                        monsters.remove(monster);
                     }
                     else {
                         ((Spell) item).castInfluence(monster);
@@ -261,7 +267,7 @@ public class Hero extends Figure {
                     }
                 }
                 else {
-                    System.out.println("Foolish! You wasted precious mana on nothing!");
+                    System.out.println("No monster or not in fight!");
                 }
             }
         }
@@ -269,6 +275,19 @@ public class Hero extends Figure {
             ((Potions)item).cure(this);
         }
         return true;
+    }
+
+    public String takeLegalActionFromInput() {
+        System.out.println("What do you want to do? ");
+        while (true) {
+            String input = Utils.takeInput();
+            if (legalActionSet.contains(input)) {
+                return input;
+            }
+            else {
+                System.out.println("Illegal Action! Try Again!");
+            }
+        }
     }
 
     private void showMonsters(MonsterTeam monsters) {
@@ -341,5 +360,35 @@ public class Hero extends Figure {
 
     public boolean hasAnyItem() {
         return !inventory.isEmpty();
+    }
+
+    public void showActionsAndNotes() {
+        int actionNum = legalActions.length;
+        System.out.println("Actions:");
+        for (int i = 0; i < actionNum; i++) {
+            System.out.println("\u001B[33m" + legalActions[i] + actionNotes[i] + "\u001B[0m");
+        }
+    }
+
+    public void showStat() {
+        System.out.println("Name/hp/mana/strength/agility/dexterity/money/experience/hp");
+        System.out.println(this);
+    }
+
+    public void lostPenalty() {
+        setMoney(getMoney() / 2);
+    }
+
+    public boolean backToOrigNexus(World world) {
+        int origLaneIdx = getIndex();
+        Cell curCell = world.getCell(getPosL(), getPosI(), getPosJ());
+        if (curCell instanceof Nexus) {
+            System.out.println("Already in your Nexus!");
+            return true;
+        }
+        curCell.leave(true);
+        Random rand = new Random();
+        world.putHeroAt(getPosL(), world.getROW() - 1, rand.nextInt(2), this);
+        return false;
     }
 }

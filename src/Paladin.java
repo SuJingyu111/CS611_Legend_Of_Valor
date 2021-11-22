@@ -8,8 +8,8 @@ public class Paladin extends Hero {
 
     public void levelUp() {
         super.levelUp();
-        setDexterity(getDexterity() + (int)(getDexterity() * LEVEL_UP_INCREASE));
-        setStrength(getStrength() + (int)(getStrength() * LEVEL_UP_INCREASE));
+        setDexterity(getDexterity() + (int)(getDexterity() * getLEVEL_UP_INCREASE()));
+        setStrength(getStrength() + (int)(getStrength() * getLEVEL_UP_INCREASE()));
     }
 
 }

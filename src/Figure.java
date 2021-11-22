@@ -16,6 +16,12 @@ public class Figure {
 
     private int index;
 
+    private int posI;
+
+    private int posJ;
+
+    private int posL;
+
     public Figure() {
         this.index = 0;
         if (this instanceof Hero) {
@@ -87,5 +93,29 @@ public class Figure {
         StringBuilder sb = new StringBuilder(mapName);
         sb.setCharAt(sb.length() - 1, (char)('0' + index));
         setMapName(sb.toString());
+    }
+
+    public int getPosI() {
+        return posI;
+    }
+
+    public int getPosJ() {
+        return posJ;
+    }
+
+    public int getPosL() {
+        return posL;
+    }
+
+    public void setPosI(int x) {
+        posI=x;
+    }
+
+    public void setPosJ(int x) {
+        posJ=x;
+    }
+
+    public void setPosL(int x) {
+        posL=x;
     }
 }

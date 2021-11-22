@@ -3,6 +3,10 @@ public abstract class RPG extends Game{
 
     private World world;
 
+    private HeroTeam heroTeam;
+
+    private MonsterTeam monsterTeam;
+
     protected abstract void runGame();
 
     protected abstract boolean ifPlayAgain();
@@ -17,5 +21,21 @@ public abstract class RPG extends Game{
 
     public void setWorld(World world) {
         this.world = world;
+    }
+
+    public HeroTeam getHeroTeam() {
+        return heroTeam;
+    }
+
+    public void setHeroTeam(HeroTeam heroTeam) {
+        this.heroTeam = heroTeam;
+    }
+
+    public MonsterTeam getMonsterTeam() {
+        return monsterTeam;
+    }
+
+    public void setMonsterTeam(MonsterTeam monsterTeam) {
+        this.monsterTeam = monsterTeam;
     }
 }

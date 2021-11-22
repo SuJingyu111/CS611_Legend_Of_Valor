@@ -18,7 +18,7 @@ public class Lane {
 
     protected void initialize() {
         for (int j = 0; j < COL; j++) {
-            cells[0][j] = cellFactory.getMonsterNexus();
+                cells[0][j] = cellFactory.getMonsterNexus();
         }
         for (int i = 1; i < ROW - 1; i++) {
             for (int j = 0; j < COL; j++) {
@@ -110,6 +110,28 @@ public class Lane {
     public boolean containHeroInRow(int row) {
         for (int j = 0; j < COL; j++) {
             if (cells[row][j].getHero() != null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Cell getCell(int r, int c) {
+        return cells[r][c];
+    }
+
+    public boolean rowIsFullOfHeroes(int row) {
+        for (int j = 0; j < COL; j++) {
+            if (cells[row][j].getHero() == null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean visitedRow(int row) {
+        for (int j = 0; j < COL; j++) {
+            if (cells[row][j].isVisited()) {
                 return true;
             }
         }

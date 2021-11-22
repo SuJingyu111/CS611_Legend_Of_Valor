@@ -1,4 +1,4 @@
-public class HeroNexus extends Market implements FigrueGenerator{
+public class HeroNexus extends Market implements Nexus {
 
     private static HeroFactory heroFactory;
 

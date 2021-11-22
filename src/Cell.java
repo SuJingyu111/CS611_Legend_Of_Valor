@@ -38,12 +38,14 @@ public class Cell {
     protected void fillContents(StringBuilder sb) {
         sb.append(' ');
         if (getHero() != null) {
+            //System.out.println(hero);
             sb.append(hero.getMapName()).append(" ");
         }
         else {
             sb.append("   ");
         }
         if (getMonster() != null) {
+            //System.out.println("monster!");//TODO: DELETE THIS
             sb.append(monster.getMapName()).append(" ");
         }
         else {
@@ -72,6 +74,7 @@ public class Cell {
     }
 
     public void setHero(Hero hero) {
+        setVisited(true);
         this.hero = hero;
     }
 
@@ -89,6 +92,15 @@ public class Cell {
 
     public void setVisited(boolean visited) {
         this.visited = visited;
+    }
+
+    public void leave(boolean isHero) {
+        if (isHero) {
+            setHero(null);
+        }
+        else {
+            setMonster(null);
+        }
     }
 
 }

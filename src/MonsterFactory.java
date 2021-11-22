@@ -30,12 +30,12 @@ public class MonsterFactory {
     private Monster getMonsterByType(String monsterType) {
         try {
             Random rand = new Random();
-            String fileName = "src/" + monsterType + ".txt";
+            String fileName = monsterType + ".txt";
             File file = new File(fileName);
             BufferedReader br = new BufferedReader(new FileReader(file));
             br.readLine();
             List<Monster> monsters = new ArrayList<>();
-            String s = null;
+            String s;
             while((s = br.readLine())!=null){
                 String[] parameters = s.split("\\s+");
                 if (parameters.length > 1) {
