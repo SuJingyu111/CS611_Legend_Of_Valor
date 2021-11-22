@@ -20,12 +20,12 @@ public class LOV extends RPG {
     }
 
     protected void runGame(){
-        //TODO
         printWelcomingMsg();
         generateWorld();
         World world = getWorld();
         int round = 0;
         while (!(world.monsterWon() || world.heroWon())) {
+            System.out.println("Round " + round + ":");
             if (round % 8 == 0) {
                 world.generateMonsters(getMonsterTeam());
             }
@@ -63,7 +63,6 @@ public class LOV extends RPG {
     }
 
     private void heroesMove() {
-        //TODO
         HeroTeam heroTeam = getHeroTeam();
         for (Hero hero : heroTeam) {
             getWorld().display();
